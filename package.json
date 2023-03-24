@@ -1,0 +1,16 @@
+{
+  "name": "contact-manager-api",
+  "version": "1.0.0",
+  "description": "a contact manager api with node.js and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Abdelrahman Anwar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
