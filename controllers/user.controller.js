@@ -37,8 +37,8 @@ const loginUser = asyncHandler(async (req, res) => {
     throw new Error("All fields are required!");
   }
   const user = await User.findOne({ email });
-  correctPass = await bcrypt.compare(password, user.password);
-  if (user && correctPass) {
+  isPassCorrect = await bcrypt.compare(password, user.password);
+  if (user && isPassCorrect) {
     const accessToken = jwt.sign(
       {
         user: {
